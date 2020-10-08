@@ -1,0 +1,43 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Roboto:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.counterDisplay{
+  display: flex;
+  justify-content: center;
+}
+
+.counter{
+  font-size: 50px;
+  display: flex;
+  width: 50px;
+  justify-content: center;
+}
+
+.buttonSection{
+  display: flex;
+  justify-content: center;
+}
+
+
+.button{
+  background-color: rgb(12, 89, 141);
+  width: 150px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+
+
+
