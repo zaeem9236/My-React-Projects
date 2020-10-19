@@ -4,9 +4,9 @@
 * ###### export default xyzContext;
      </ul>
 
-## 2nd phase -> wrap '**new folder name**' around root component
+## 2nd phase -> wrap 'new folder name' around root component
 * ###### import React from 'react';
-* ###### import 'new folder name' from './ 'new folder name' '
+* ###### import ' **new folder name** ' from './ 'new folder name' '
 * ###### <'new folder name'.Provider>
 * ###### </'new folder name'.Provider>
 
