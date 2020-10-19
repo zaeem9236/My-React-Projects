@@ -6,7 +6,7 @@
 
 ## 2nd phase -> wrap 'new folder name' around root component
 * ###### import React from 'react';
-* ###### import ' **new folder name** ' from './ 'new folder name' '
+* ###### import ' __new folder name__ ' from './ 'new folder name' '
 * ###### <'new folder name'.Provider>
 * ###### </'new folder name'.Provider>
 
