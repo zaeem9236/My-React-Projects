@@ -3,7 +3,7 @@
 	* const xyzContext = createContext(0);
 	* export default xyzContext;
 
-## 2nd phase -> wrap 'create context file name' around root component
+## *2nd phase -> wrap 'create context file name' around root component
 	 * import React from 'react';
 	* import 'create context file name' from './ 'create context file name' '
 	* <'create context file name'.Provider>
