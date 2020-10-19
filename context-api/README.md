@@ -4,16 +4,16 @@
 * ###### export default xyzContext;
      </ul>
 
-## 2nd phase -> wrap 'create context file name' around root component
+## 2nd phase -> wrap 'new folder name' around root component
 * ###### import React from 'react';
-* ###### import 'create context file name' from './ 'create context file name' '
-* ###### <'create context file name'.Provider>
-* ###### </'create context file name'.Provider>
+* ###### import 'new folder name' from './ 'new folder name' '
+* ###### <'new folder name'.Provider>
+* ###### </'new folder name'.Provider>
 
 ## 3rd phase -> use it in child
 * ###### import React, {'useContext'}  from 'react'
-* ###### import 'create context file name' from 'create context file name';
-* ###### let value = useContext{'create Context file name'}; 
+* ###### import 'new folder name' from 'new folder name';
+* ###### let value = useContext{'new folder name'}; 
 
 
 
