@@ -13,7 +13,7 @@
 ## 3rd phase -> use it in child
 * ###### import React, {'useContext'}  from 'react'
 * ###### import ' new folder name ' from ' new folder name ';
-* ###### let value = useContext{' <b>new folder name</b> '}; 
+* ###### let value = useContext{' new folder name '}; 
 
 
 
