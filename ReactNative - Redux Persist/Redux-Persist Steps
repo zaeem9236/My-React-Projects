@@ -1,0 +1,46 @@
+
+Link: https://react-native-async-storage.github.io/async-storage/docs/install/
+
+Link: https://github.com/rt2zz/redux-persist
+
+
+Step 1: yarn add @react-native-community/async-storage
+
+Step 2: yarn add redux-persist
+ 
+
+Step 3: go to redux store folder and import AsyncStorage from '@react-native-community/async-storage'; 
+
+Step 4: import { combineReducers } from "redux";
+
+Step 5 : import { persistReducer } from 'redux-persist';
+
+	const reducers = combineReducers({ 
+	CountDown : CountDownSlice
+})
+
+
+Step 6: const persistConfig={key:'root', storage: AsyncStorage, whitelist: ['ColdnHotSlice']}
+
+Step 7: const persistedReducer = persistReducer(persistConfig, reducers)
+
+
+
+Step 8 : export default configureStore({
+	reducer: persistedReducer,
+
+	middleware: getDefaultMiddleware({ // import getDefaultMiddleware from '@reduxjs/toolkit' and add these extra lines for serializeable issue solve
+        serializableCheck: {
+            ignoredActions: ["persist/PERSIST"],
+        },
+    }),
+})
+
+
+Step 9: go to root folder i.e (index/App.js) and import { persistStore } from 'redux-persist';
+
+Step 10: import { PersistGate } from 'redux-persist/integration/react';
+
+Step 11: let persistor = persistStore(store);
+
+Step 12: Wrap '<PersistGate loading={null} persistor={persistor}></PersistGate>' below original store Provider
